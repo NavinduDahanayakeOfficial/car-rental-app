@@ -19,3 +19,21 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Custom styles if needed */
+.bg-primary {
+  background-color: #5937E0;
+}
+
+.bg-secondary {
+  background-color: #694BE3;
+}
+
+.btn-primary {
+  background-color: #FF9E0C;
+}
+
+.input-date-white::-webkit-calendar-picker-indicator {
+  filter: invert(1); /* Inverts the color to white */
+  opacity: 0.8;
+}
