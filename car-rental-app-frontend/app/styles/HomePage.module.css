@@ -1,0 +1,311 @@
+.heroContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    background: #5937E0;
+    color: white;
+    border-radius: 1rem;
+    margin-left: 3%;
+    margin-right: 3%;
+    
+  }
+
+  .formContainer{
+    margin-right: 20%;
+  }
+  
+  .heroContent {
+    max-width: 50%;
+    margin-left: 40px;
+  }
+  
+  .heroContent h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .heroContent p {
+    margin-bottom: 1.5rem;
+    
+  }
+  
+  .viewAllCarsButton {
+    background-color: #ffa726;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .bookingForm {
+    background: white;
+    color: black;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .bookingForm h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .bookingForm form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .bookingForm button {
+    background-color: #ffa726;
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .features {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    background: white;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+  
+  .feature {
+    text-align: center;
+    max-width: 20%;
+  
+  }
+  
+  .feature .icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+@font-face {
+  font-family: 'Geist';
+  src: url('/fonts/Geist-Regular.woff2') format('woff2');
+}
+
+.featureTitle, .featureDescription {
+  color: black; /* Set both title and description text color to black */
+}
+
+.heroImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.featureSection {
+  display: flex !important; 
+  align-items: flex-start !important;
+  gap: 2% !important;
+  
+}
+
+.topicContainer {
+  display: flex;
+}
+
+
+.imageContainer {
+  flex: 1; 
+  max-width: 45%; 
+}
+
+
+
+.featureList {
+  margin-top: 4%;
+}
+
+.featureItem {
+  margin-bottom: 20px; /* Adds space between each feature */
+}
+
+.featureNumber {
+  display: inline-flex; 
+  align-items: center;
+  justify-content: center;
+  background-color: purple;
+  color: white; 
+  border-radius: 50%; 
+  width: 30px; 
+  height: 30px; 
+  font-size: 16px;
+  font-weight: bold; 
+}
+
+.featureItem h3 {
+  font-size: 20px;
+  color: #333 ;
+  margin-left: 1%;
+ 
+}
+
+.featureItem p {
+  color: #555; /* Adjust the color */
+  font-size: 16px;
+}
+
+
+/* FactsInNumbers.module.css */
+.factsInNumbers {
+  background-color: #5937E0; 
+  color: #fff;
+  padding: 60px;
+  text-align: center;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 10px;
+  border-radius: 1rem;
+}
+
+.textContent h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.textContent p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px; /* Adds space between the stats */
+  height: 120px;
+}
+
+.stat {
+  background-color: white; /* Orange background for each stat */
+  color: black;
+  padding: 20px;
+  border-radius: 20px;
+  width: 200px;
+  text-align: center;
+  display: flex;
+  gap: 10px;
+}
+
+.statIcon {
+  font-size: 40px; 
+  background-color: orange;
+  border-radius: 1rem;
+  max-height: 80%;
+  width: 70px;
+ 
+}
+
+.statNumber {
+  font-size: 30px;
+  font-weight: bold;
+  
+}
+
+.statDetails p {
+  margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+  .stats {
+    flex-direction: column; /* Stack the stats on smaller screens */
+    gap: 20px;
+  }
+}
+
+/* HeroSection.module.css */
+.heroSection {
+  background-color: #5937E0;
+  color: #fff;
+  padding: 60px;
+  position: relative;
+  border-radius: 20px;
+  display: flex;
+  margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 10px;
+}
+
+
+.heroContent {
+  z-index: 2;
+  position: relative;
+}
+
+.heroContent h1 {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.heroContent p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+ 
+  
+}
+
+.searchBar input {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  width: 200px;
+  color: black;
+}
+
+.searchBar button {
+  background-color: #f8b400; /* Orange button */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.vectorImage{
+  margin-left: 20%;
+}
+
+/* .headingPart{
+  max-width: 5000px;
+} */
+
+.searchBar button:hover {
+  background-color: #d99700; /* Darker orange on hover */
+}
+
+@media (max-width: 768px) {
+  .heroContent h1 {
+    font-size: 28px;
+  }
+
+  .searchBar input {
+    width: 150px;
+  }
+}
+
