@@ -4,6 +4,7 @@ import Image from 'next/image';
 import RentCar from '../assets/images/carForRent.jpeg'
 import vector from '../assets/images/Vector.png'
 import BookCarForm from '@/components/bookCarForm';
+import CarDetailsCard from '@/components/carDetailsCard';
 
 
 
@@ -128,6 +129,16 @@ const Home: React.FC = () => {
     </div>
       <p>Aliquam adipiscing velit semper morbi. Purus non eu cursus porttitor tristique et gravida. Quis nunc interdum gravida ullamcorper sed integer.</p>
     </div> */}
+  </div>
+</div>
+
+{/* Car Details Section */}
+<div className={styles.carDetailsSection}>
+  <h2>Car Details</h2>
+  <div className={styles.carDetails}>
+    <CarDetailsCard />
+    <CarDetailsCard />
+    <CarDetailsCard />
   </div>
 </div>
 
