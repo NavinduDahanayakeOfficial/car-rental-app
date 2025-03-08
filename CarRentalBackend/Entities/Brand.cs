@@ -10,5 +10,6 @@ namespace CarRentalBackend.Entities
         [JsonIgnore]  // Prevents circular reference
         public ICollection<Model> Models { get; set; }
 
+
     }
 }

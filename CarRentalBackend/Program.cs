@@ -12,6 +12,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IBrandQuery, BrandQuery>();
 builder.Services.AddScoped<IModelQuery, ModelQuery>();
+builder.Services.AddScoped<ICarQuery, CarQuery>();
 
 // Configure MySQL Database
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");

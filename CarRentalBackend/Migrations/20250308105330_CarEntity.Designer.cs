@@ -3,6 +3,7 @@ using CarRentalBackend.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CarRentalBackend.Migrations
 {
     [DbContext(typeof(CarRentalDbContext))]
-    partial class CarRentalDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250308105330_CarEntity")]
+    partial class CarEntity
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -46,6 +49,9 @@ namespace CarRentalBackend.Migrations
 
                     MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("CarId"));
 
+                    b.Property<int>("BrandId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Color")
                         .IsRequired()
                         .HasColumnType("longtext");
@@ -58,6 +64,8 @@ namespace CarRentalBackend.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("CarId");
+
+                    b.HasIndex("BrandId");
 
                     b.HasIndex("ModelId");
 
@@ -88,11 +96,19 @@ namespace CarRentalBackend.Migrations
 
             modelBuilder.Entity("CarRentalBackend.Entities.Car", b =>
                 {
+                    b.HasOne("CarRentalBackend.Entities.Brand", "Brand")
+                        .WithMany("Cars")
+                        .HasForeignKey("BrandId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("CarRentalBackend.Entities.Model", "Model")
                         .WithMany("Cars")
                         .HasForeignKey("ModelId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Brand");
 
                     b.Navigation("Model");
                 });
@@ -110,6 +126,8 @@ namespace CarRentalBackend.Migrations
 
             modelBuilder.Entity("CarRentalBackend.Entities.Brand", b =>
                 {
+                    b.Navigation("Cars");
+
                     b.Navigation("Models");
                 });
 
