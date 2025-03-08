@@ -2590,24 +2590,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\OMEN\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Rashini\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\OMEN\\Documents\\GitHub\\car-rental-app\\CarRentalBackend\\CarRentalBackend.csproj",
+      "projectUniqueName": "D:\\car-rental-app\\CarRentalBackend\\CarRentalBackend.csproj",
       "projectName": "CarRentalBackend",
-      "projectPath": "C:\\Users\\OMEN\\Documents\\GitHub\\car-rental-app\\CarRentalBackend\\CarRentalBackend.csproj",
-      "packagesPath": "C:\\Users\\OMEN\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\OMEN\\Documents\\GitHub\\car-rental-app\\CarRentalBackend\\obj\\",
+      "projectPath": "D:\\car-rental-app\\CarRentalBackend\\CarRentalBackend.csproj",
+      "packagesPath": "C:\\Users\\Rashini\\.nuget\\packages\\",
+      "outputPath": "D:\\car-rental-app\\CarRentalBackend\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\OMEN\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Rashini\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2615,6 +2610,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -2632,8 +2628,7 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      },
-      "SdkAnalysisLevel": "9.0.100"
+      }
     },
     "frameworks": {
       "net8.0": {
@@ -2687,7 +2682,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.103/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

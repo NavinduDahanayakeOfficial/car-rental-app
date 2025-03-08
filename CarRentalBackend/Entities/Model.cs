@@ -17,5 +17,9 @@ namespace CarRentalBackend.Entities
 
         [ForeignKey("BrandId")]
         public Brand Brand { get; set; } // Navigation Property
+
+        [JsonIgnore]
+        public ICollection<Car> Cars { get; set; }
+
     }
 }
