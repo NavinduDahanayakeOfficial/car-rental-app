@@ -3,5 +3,5 @@ car-rental-app-frontend/.env
 car-rental-app-frontend/package-lock.json
 car-rental-app-frontend/.next
 CarRentalBackend/.vs
-CarRentalBackend/obj
-CarRentalBackend/bin
+CarRentalBackend/obj/
+CarRentalBackend/bin/
