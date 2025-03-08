@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "wB3sFGSgbcRDX3LCE6iIBNwe7lpa+UUsBd36KOvq9xA=",
+  "Hash": "Uj10w33nyLea/y8bdjCx098Q150SSgxvOuYp6kfmUlg=",
   "Source": "CarRentalBackend",
   "BasePath": "_content/CarRentalBackend",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }
