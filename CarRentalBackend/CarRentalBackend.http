@@ -1,0 +1,6 @@
+@CarRentalBackend_HostAddress = http://localhost:5198
+
+GET {{CarRentalBackend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
