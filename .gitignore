@@ -2,3 +2,8 @@ car-rental-app-frontend/node_modules
 car-rental-app-frontend/.env
 car-rental-app-frontend/package-lock.json
 car-rental-app-frontend/.next
+CarRentalBackend/.vs
+**/obj
+**/bin
+
+

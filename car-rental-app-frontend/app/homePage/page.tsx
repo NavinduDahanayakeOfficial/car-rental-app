@@ -1,5 +1,5 @@
 import styles from '../styles/HomePage.module.css';
-import images from '../assets/images/carblur.png'
+//import images from '../assets/images/carblur.png'
 import Image from 'next/image';
 import RentCar from '../assets/images/carForRent.jpeg'
 import vector from '../assets/images/Vector.png'
@@ -81,20 +81,14 @@ const Home: React.FC = () => {
 
       <div className={styles.featureSection}>
 
-  <div style={{ maxWidth: "50%", marginLeft: "2.5%" }}>
-    <Image
-      src={RentCar}
-      alt="Image"
-      style={{
-        maxWidth: "90%",
-        backgroundColor: "white",
-        marginLeft: "2%",
-        borderRadius: "10px",
-        marginTop: "5%",
-       
-      }}
-    />
-  </div>
+      <div className="w-full mx-auto p-4">
+  <Image
+    src={RentCar}
+    alt="Image"
+    className="w-full h-auto rounded-lg bg-white"
+  />
+</div>
+
 
    <div className={styles.featureList} style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
     
