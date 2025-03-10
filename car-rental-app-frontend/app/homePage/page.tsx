@@ -3,7 +3,9 @@ import styles from '../styles/HomePage.module.css';
 import Image from 'next/image';
 import RentCar from '../assets/images/carForRent.jpeg'
 import vector from '../assets/images/Vector.png'
+import ArrowRight from '../assets/images/arrow-right.svg'
 import BookCarForm from '@/components/bookCarForm';
+import CarDetailsCard from '@/components/carDetailsCard';
 
 
 
@@ -122,6 +124,25 @@ const Home: React.FC = () => {
     </div>
       <p>Aliquam adipiscing velit semper morbi. Purus non eu cursus porttitor tristique et gravida. Quis nunc interdum gravida ullamcorper sed integer.</p>
     </div> */}
+  </div>
+</div>
+
+{/* Car Details Section */}
+<div className="mx-8 p-4">
+  <div className='relative display md:flex justify-between items-center mb-6'>
+  <div className="text-xl md:text-5xl text-black font-extrabold">Choose the car that <br></br> suits you</div>
+  <div className='display md:flex absolute right-0 bottom-0 text-xl text-black font-bold'>
+    <span className='mr-2'>View all</span>
+    <Image src={ArrowRight} alt="Arrow Right"/>
+  </div>
+  </div>
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <CarDetailsCard />
+    <CarDetailsCard />
+    <CarDetailsCard />
+    <CarDetailsCard />
+    <CarDetailsCard />
+    <CarDetailsCard />
   </div>
 </div>
 
