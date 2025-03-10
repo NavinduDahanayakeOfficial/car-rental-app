@@ -299,12 +299,6 @@
   background-color: #d99700; /* Darker orange on hover */
 }
 
-.carDetails {
-  display: flex;
-  gap: 20px;
-  margin-top: 40px;
-}
-
 @media (max-width: 768px) {
   .heroContent h1 {
     font-size: 28px;
