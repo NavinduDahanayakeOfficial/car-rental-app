@@ -75,7 +75,7 @@ function Navbar() {
 
          {/* mobile menu items */}
          {isOpen && (
-            <div className="flex flex-col md:hidden py-6 px-10 align-items-center justify-center cursor-pointer">
+            <div className="flex flex-col md:hidden py-6 px-10 justify-center cursor-pointer">
                {navLinks.map(({ name, path }) => (
                   <div
                      key={name}
