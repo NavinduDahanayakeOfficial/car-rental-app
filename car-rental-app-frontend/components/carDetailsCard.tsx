@@ -1,8 +1,8 @@
 import Image from 'next/image';
-import GearShifter from '../app/assets/images/gear-shifter.svg';
-import FuelMeter from '../app/assets/images/fuel-meter.svg';
-import AirCon from '../app/assets/images/air-con.svg';
-import CarSkeleton from '../app/assets/images/car-skeleton.svg';
+import GearShifter from '@/public/images/gear-shifter.svg';
+import FuelMeter from '@/public/images/fuel-meter.svg';
+import AirCon from '@/public/images/air-con.svg';
+import CarSkeleton from '@/public/images/car-skeleton.svg';
 
 export default function CarDetailsCard({ }) {
     let car = { brand: 'Car', type:'Sedan', image: 'https://images.unsplash.com/photo-1557683316-973673baf926', transmission: 'Automatic', fuelType:'PB 95', airCon:'Air Conditioned', price: 100, description: 'This is a car' };
