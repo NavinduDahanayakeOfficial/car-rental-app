@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
+import TextWithIcon from "../ui/TextWithIcon";
 
 function Navbar() {
    const pathName = usePathname();
@@ -26,7 +27,7 @@ function Navbar() {
                className="flex items-center space-x-3 font-inter"
             >
                <Image
-                  src="/images/navbarIcons/carLogo.svg"
+                  src="/images/layoutIcons/carLogo.svg"
                   alt="car logo"
                   width={48}
                   height={48}
@@ -49,9 +50,9 @@ function Navbar() {
                ))}
             </ul>
             {/*desktop contact number*/}
-            <div className="hidden md:flex items-center space-x-3 font-inter">
+            {/* <div className="hidden md:flex items-center space-x-3 font-inter">
                <Image
-                  src="/images/navbarIcons/telephone.svg"
+                  src="/images/layoutIcons/telephone.svg"
                   alt="telephone icon"
                   width={40}
                   height={40}
@@ -60,7 +61,13 @@ function Navbar() {
                   <p className="">Need help?</p>
                   <p className="">+996 247-1680</p>
                </div>
-            </div>
+            </div> */}
+            <TextWithIcon
+               icon="/images/layoutIcons/telephone.svg"
+               topText="Need help?"
+               bottomText="+996 247-1680"
+               iconWidth={40}
+            />
 
             {/* mobile menu button */}
             <div className="md:hidden flex items-center hover:bg-customPurple hover:text-white transition-all duration-300 rounded-md">

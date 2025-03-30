@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Navbar from "@/components/navbar";
+import Navbar from "@/components/layout/Navbar";
 import { Geist, Geist_Mono, Inter } from "next/font/google";
 
 export const inter = Inter({
