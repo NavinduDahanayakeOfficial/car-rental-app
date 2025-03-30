@@ -4,6 +4,7 @@ import React from "react";
 
 interface Props {
    icon: string;
+   altText: string;
    topText: string;
    bottomText: string;
    iconWidth?: number;
@@ -13,6 +14,7 @@ interface Props {
 
 function TextWithIcon({
    icon,
+   altText,
    topText,
    bottomText,
    iconWidth = 24,
@@ -28,7 +30,7 @@ function TextWithIcon({
       >
          <Image
             src={icon}
-            alt="telephone icon"
+            alt={altText}
             width={iconWidth}
             height={iconWidth}
          />

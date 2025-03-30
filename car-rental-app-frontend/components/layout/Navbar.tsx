@@ -64,6 +64,7 @@ function Navbar() {
             </div> */}
             <TextWithIcon
                icon="/images/layoutIcons/telephone.svg"
+               altText="telephone icon"
                topText="Need help?"
                bottomText="+996 247-1680"
                iconWidth={40}

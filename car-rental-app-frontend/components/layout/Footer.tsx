@@ -20,12 +20,14 @@ function Footer() {
             </div>
             <TextWithIcon
                icon="/images/layoutIcons/locationPin_orange.svg"
+               altText="location pin icon"
                topText="Address"
                bottomText="Oxford Ave. Cary, NC 27511"
                iconWidth={40}
             />
             <TextWithIcon
                icon="/images/layoutIcons/mail_orange.svg"
+               altText="mail icon"
                topText="Email"
                bottomText="nwiger@yahoo.com"
                iconWidth={40}
@@ -33,6 +35,7 @@ function Footer() {
             />
             <TextWithIcon
                icon="/images/layoutIcons/phone_orange.svg"
+               altText="phone icon"
                topText="Phone"
                bottomText="+537 547-6401"
                iconWidth={40}
