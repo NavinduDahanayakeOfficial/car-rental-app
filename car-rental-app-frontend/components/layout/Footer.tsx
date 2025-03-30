@@ -6,7 +6,7 @@ import Link from "next/link";
 function Footer() {
    return (
       <div className="flex flex-col px-16 py-14 space-y-16">
-         <div className="flex items-center justify-between">
+         <div className="flex flex-col md:flex-row items-start md:items-center justify-between space-y-8 md:space-y-0">
             <div className="flex items-center space-x-3 font-inter">
                <Image
                   src="/images/layoutIcons/carLogo.svg"
@@ -38,9 +38,9 @@ function Footer() {
                iconWidth={40}
             />
          </div>
-         <div className="flex items-center justify-between">
+         <div className="flex flex-col md:flex-row items-start md:items-center justify-between space-y-10 md:space-y-0">
             <div className="flex flex-col items-start justify-between">
-               <p className="text-xl font-semibold font-sans max-w-72 line-clamp-4">
+               <p className="text-xl font-semibold font-sans md:max-w-72 line-clamp-4">
                   Faucibus faucibus pellentesque dictum turpis. Id pellentesque
                   turpis massa a id iaculis lorem turpis euismod. Purus at
                   quisque integer sit. Libero quis sapien tempus pellentesque

@@ -8,6 +8,7 @@ interface Props {
    bottomText: string;
    iconWidth?: number;
    bottomTextLink?: string;
+   hiddenOnSmallScreen?: boolean;
 }
 
 function TextWithIcon({
@@ -16,9 +17,15 @@ function TextWithIcon({
    bottomText,
    iconWidth = 24,
    bottomTextLink,
+   hiddenOnSmallScreen = false,
 }: Props) {
    return (
-      <div className="hidden md:flex items-center space-x-3 font-inter">
+      <div
+         className={
+            `${hiddenOnSmallScreen ? "hidden md:flex" : "flex"}` +
+            " items-center space-x-3 font-inter"
+         }
+      >
          <Image
             src={icon}
             alt="telephone icon"

@@ -67,6 +67,7 @@ function Navbar() {
                topText="Need help?"
                bottomText="+996 247-1680"
                iconWidth={40}
+               hiddenOnSmallScreen={true}
             />
 
             {/* mobile menu button */}
