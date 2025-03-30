@@ -59,7 +59,7 @@ function Footer() {
                   <Link href="#">
                      <Image
                         src="/images/layoutIcons/instagram.svg"
-                        alt="facebook icon"
+                        alt="instagram icon"
                         width={24}
                         height={24}
                      />
@@ -67,7 +67,7 @@ function Footer() {
                   <Link href="#">
                      <Image
                         src="/images/layoutIcons/x.svg"
-                        alt="facebook icon"
+                        alt="x icon"
                         width={24}
                         height={24}
                      />
@@ -75,7 +75,7 @@ function Footer() {
                   <Link href="#">
                      <Image
                         src="/images/layoutIcons/youtube.svg"
-                        alt="facebook icon"
+                        alt="youtube icon"
                         width={24}
                         height={24}
                      />
