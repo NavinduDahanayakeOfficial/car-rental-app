@@ -1,9 +1,9 @@
 import styles from '../styles/HomePage.module.css';
 //import images from '../assets/images/carblur.png'
 import Image from 'next/image';
-import RentCar from '../assets/images/carForRent.jpeg'
-import vector from '../assets/images/Vector.png'
-import ArrowRight from '../assets/images/arrow-right.svg'
+import RentCar from '@/public/images/carForRent.jpeg'
+import vector from '@/public/images/Vector.png'
+import ArrowRight from '@/public/images/arrow-right.svg'
 import BookCarForm from '@/components/bookCarForm';
 import CarDetailsCard from '@/components/carDetailsCard';
 
