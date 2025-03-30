@@ -88,17 +88,20 @@ function Footer() {
                </p>
                <Link href="/aboutUs">About Us</Link>
                <Link href="/contactUs">Contact Us</Link>
-               <Link href="">Gallery</Link>
-               <Link href="">Blog</Link>
-               <Link href="">F.A.Q</Link>
+               <Link href="/gallery">Gallery</Link>
+               <Link href="/blog">Blog</Link>
+               <Link href="/faq">F.A.Q</Link>
             </div>
             <div className="flex flex-col justify-start items-start ">
                <p className="font-semibold text-xl mb-6 ">Vehicles</p>
                <Link href="/aboutUs">Sedan</Link>
                <Link href="/contactUs">Cabriolet</Link>
-               <Link href="">Pickup</Link>
-               <Link href="">Minivan</Link>
-               <Link href="">SUV</Link>
+               <Link href="/pickup">Pickup</Link>{" "}
+               {/* redirect to vehicle page and filter pickups*/}
+               <Link href="/minivan">Minivan</Link>{" "}
+               {/* redirect to vehicle page and filter minivans*/}
+               <Link href="/suv">SUV</Link>{" "}
+               {/* redirect to vehicle page and filter SUVs*/}
             </div>
             <div className="flex flex-col justify-start items-start space-y-6">
                <p className="font-semibold text-xl">Download App</p>
