@@ -13,6 +13,9 @@ export default {
         foreground: "var(--foreground)",
         customPurple: "var(--custom-purple)",
       },
+      fontFamily: {
+        inter: "var(--font-inter)",
+      },
     },
   },
   plugins: [],
